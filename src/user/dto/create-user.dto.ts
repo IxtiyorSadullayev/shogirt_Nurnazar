@@ -28,4 +28,7 @@ export class CreateUserDto {
     @ApiProperty({type: Array, title: "Foydalanuvchi ip manzili.", required: false})
     ip?: [];
 
+    @ApiProperty({type: String, title: "User Type", enum: ["USER", "ADMIN"], default: "USER"})
+    usertype: string;
+
 }

@@ -32,6 +32,10 @@ export class User {
 
     @Prop({type: Array, required: false, default: []})
     ip?: [];
+
+    @Prop({type:String, enum: ["USER", "ADMIN"], default:"USER"})
+    usertype: string;
+
 }
 
 export const UserModel = SchemaFactory.createForClass(User)
