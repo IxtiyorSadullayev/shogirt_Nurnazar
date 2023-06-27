@@ -36,7 +36,7 @@ export class CreateProductDto {
     @ApiProperty({type: Array, required: true, title: "Maxsulotning rasmlari"})
     product_photo: [string];
 
-    @ApiProperty({type: String, required: true,})
+    @ApiProperty({type: String, required: true, title: "Maxsulotning narxi"})
     product_amount: string;
 
     @ApiProperty({type: Array, required: false})
